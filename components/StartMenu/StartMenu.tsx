@@ -35,16 +35,16 @@ interface StartMenuProps {
 
 const StartMenu = ({ menuControl }: StartMenuProps) => {
   const handleOpenGitHub = () => {
-    window.open("https://github.com/firwer", "_blank", "noreferrer");
+    window.open("https://github.com/aduyinuo", "_blank", "noreferrer");
   };
 
   const handleOpenResume = () => {
-    window.open("./Resume.pdf", "_blank");
+    window.open("./CV.pdf", "_blank");
   };
 
   const handleOpenLinkedin = () => {
     window.open(
-      "https://www.linkedin.com/in/poh-wei-pin-7b9061183/",
+      "https://www.linkedin.com/in/yinuo-du/",
       "_blank",
       "noreferrer"
     );
