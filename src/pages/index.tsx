@@ -51,6 +51,15 @@ export default function Home() {
   const handleOpenResume = () => {
     window.open("./CV.pdf");
   };
+  const handleOpenResearchStatement = () => {
+    window.open("./research_statement.pdf");
+  };
+  const handleOpenTeachingStatement = () => {
+    window.open("./teaching.pdf");
+  };
+  const handleOpenReferences = () => {
+    window.open("./references.pdf");
+  };
 
   return (
     <>
@@ -83,7 +92,25 @@ export default function Home() {
           <DesktopIcon
             appID={3}
             doubleClick={handleOpenResume}
-            title="My Resume"
+            title="My CV"
+            img={pdf}
+          />
+          <DesktopIcon
+            appID={3}
+            doubleClick={handleOpenResearchStatement}
+            title="My Research Statement"
+            img={pdf}
+          />
+          <DesktopIcon
+            appID={3}
+            doubleClick={handleOpenTeachingStatement}
+            title="My Teaching Statement"
+            img={pdf}
+          />
+          <DesktopIcon
+            appID={3}
+            doubleClick={handleOpenReferences}
+            title="My Teaching Statement"
             img={pdf}
           />
           <DesktopIcon
