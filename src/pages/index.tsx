@@ -96,44 +96,44 @@ export default function Home() {
             img={pdf}
           />
           <DesktopIcon
-            appID={3}
+            appID={4}
             doubleClick={handleOpenResearchStatement}
             title="My Research Statement"
             img={pdf}
           />
           <DesktopIcon
-            appID={3}
+            appID={5}
             doubleClick={handleOpenTeachingStatement}
             title="My Teaching Statement"
             img={pdf}
           />
           <DesktopIcon
-            appID={3}
+            appID={6}
             doubleClick={handleOpenReferences}
             title="My Teaching Statement"
             img={pdf}
           />
           <DesktopIcon
-            appID={4}
+            appID={7}
             doubleClick={handleOpenLinkedin}
             title="My LinkedIn"
             img={linkedin}
           />
           <DesktopIcon
-            appID={5}
+            appID={8}
             doubleClick={handleOpenGitHub}
             title="My Github"
             img={github}
           />
           <DesktopIcon
-            appID={6}
+            appID={9}
             doubleClick={() => handleRunApp(2)}
             title="My Work"
             img={cmd}
           />
 
           <DesktopIcon
-            appID={7}
+            appID={10}
             doubleClick={iconClicked}
             title="My Hobbies"
             img={solitare}
