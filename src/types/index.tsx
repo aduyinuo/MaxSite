@@ -41,6 +41,9 @@ export enum WorkType {
   PERSONAL = "Personal Projects",
   SCHOOL = "School Projects",
   HACKATHON = "Hackathons",
+  DECEPTION = "Cyber Deception",
+  HAT = "Human-AI Teaming",
+  GROUP = "Collective Intelligence"
 }
 
 export type WorkFile = {

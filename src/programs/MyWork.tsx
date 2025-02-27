@@ -94,21 +94,7 @@ const MyWork = ({ id }: Props) => {
               Begin Navigation by clicking on one of my projects on the left
               panel
             </h5>
-            <h5>These are some of the tech stacks I have experiences with!</h5>
-            <div className={styles.content_tech}>
-              {Object.values(TechIcon).map((badge) => (
-                <div key={badge} className={styles.tech_badge}>
-                  <Image
-                    style={{ width: "100%", borderRadius: "20px" }}
-                    alt="tech"
-                    src={badge}
-                    width={50}
-                    height={35}
-                    loader={loaderProp}
-                  />
-                </div>
-              ))}
-            </div>
+            
           </div>
         ) : (
           <div>
