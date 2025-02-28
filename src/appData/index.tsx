@@ -29,6 +29,9 @@ import decep1 from "../../assets/2side.png";
 import decep2 from "../../assets/RLDecep.png";
 import llm1 from "../../assets/LLMConvo.png";
 import llm2 from "../../assets/LLMAgent.png";
+import tdg from "../../assets/Picture1_bis.png";
+import transfer1 from "../../assets/transfer.png";
+import transfer2 from "../../assets/transferAlg.png";
 import dsta_1 from "../../assets/work/dsta/1.png";
 import dsta_2 from "../../assets/work/dsta/2.png";
 import dsta_3 from "../../assets/work/dsta/3.png";
@@ -311,7 +314,7 @@ found by PPO are significantly better than a heuristic policy.`,
     date: "Sep 2022 - June 2023",
     gitURL: "",
     techstack: [],
-    gallery: [],
+    gallery: [tdg],
     overview: `Autonomous agents are becoming increasingly prevalent and capable of collaborating with humans on interdependent tasks as teammates. There is increasing recognition that human-like agents might be natural human collaborators. However, there has been limited work on designing agents according to the principles of human cognition or in empirically testing their teamwork effectiveness.  In this study, we design an agent that relies on episodic memory to determine its actions (\textit{Cognitive agent}) and compare its effectiveness with two types of autonomous agents: one that relies on heuristic reasoning (\textit{Heuristic agent}) and one that behaves randomly (\textit{Random agent}). These agents are compared in a human-autonomy team (HAT) performing a cyber-protection task. Using this task, we systematically evaluate how autonomous teammates' cognitive abilities and competence impact the team's interaction and outcomes. The results revealed that teams with Cognitive agents are the most effective, followed by teams with Heuristic and Random agents. Evaluation of collaborative team process metrics suggests that the cognitive agent is more adaptive to individual play styles of human teammates, but it is also inconsistent and unpredictable. Competent agents (Cognitive and Heuristic agents) require less human effort but might cause over-reliance. The results of the post-experiment questionnaire showed that competent agents are rated more trustworthy and cooperative than Random agents. We also found that human participants' subjective ratings correlate with their team performance, and humans tend to take the credit or responsibility for the team. We suggest that autonomous agents for HATs should be competent and endowed with human-like cognition. In addition, agents should employ predictable behavior or explanations to maintain human trust and actively seek human support for more effective teamwork.`,
   },
   {
@@ -347,7 +350,7 @@ found by PPO are significantly better than a heuristic policy.`,
     date: "Mar 2023 - June 2023",
     gitURL: "",
     techstack: [],
-    gallery: [],
+    gallery: [transfer1, transfer2],
     overview: `An important characteristic of human learning and decision-making is the flexibility with which we rapidly adapt to novel tasks. To this day, models of human behavior have been unable to emulate the ease and success with which humans transfer knowledge in one context to another. Humans rely on a lifetime of experience and a variety of cognitive mechanisms that are difficult to represent computationally. To address this problem, we propose a novel human behavior model that accounts for human transfer of learning using three mechanisms: compositional reasoning, causal inference, and optimal forgetting. To evaluate this proposed model, we introduce an experiment task designed to elicit human transfer of learning under different conditions. Our proposed model demonstrates a more human-like transfer of learning compared to models that optimize transfer or human behavior models that do not directly account for transfer of learning. The results of the ablation testing of the proposed model and a systematic comparison to human data demonstrate the importance of each component of the cognitive model underlying the transfer of learning.`,
   },
   {
