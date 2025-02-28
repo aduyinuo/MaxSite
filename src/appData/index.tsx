@@ -261,7 +261,7 @@ export const WorkData = [
     date: "May 2020 - Dec 2020",
     gitURL: "",
     techstack: [],
-    gallery: [lul],
+    gallery: [],
     overview: `One of the widely used cyber deception techniques
 is decoying, where defenders create fictitious machines (i.e., honeypots) to lure attackers. Honeypots are deployed to entice attackers, but their effectiveness depends on their configuration as that
 would influence whether attackers will judge them
@@ -302,16 +302,39 @@ found by PPO are significantly better than a heuristic policy.`,
   },
   {
     id: 3,
-    title: "Telegram Bot - Digital Goods Management System",
-    date: "Oct 2022 - Present",
+    title: "Experimental Evaluation of Cognitive Agents for Collaboration in Human-Autonomy Cyber Defense Teams",
+    date: "Sep 2022 - June 2023",
     gitURL: "",
-    techstack: [TechIcon.TELEGRAM, TechIcon.PYTHON, TechIcon.GOOGLECLOUD],
-    gallery: [MS, MS2],
-    overview: `I have developed a cloud inventory management system on gCloud with a Telegram bot 
-    interface to help manage my online software distribution business. The system is able to retrieve,
-    restock, validate and deliver digital goods to my customers. This system has helped me to automate
-    crucial portions of my business processes and save me a lot of time and effort while also reducing
-    the delivery time of my products. To date, this system has helped me to fulfil over 1000+ orders`,
+    techstack: [],
+    gallery: [],
+    overview: `Autonomous agents are becoming increasingly prevalent and capable of collaborating with humans on interdependent tasks as teammates. There is increasing recognition that human-like agents might be natural human collaborators. However, there has been limited work on designing agents according to the principles of human cognition or in empirically testing their teamwork effectiveness.  In this study, we design an agent that relies on episodic memory to determine its actions (\textit{Cognitive agent}) and compare its effectiveness with two types of autonomous agents: one that relies on heuristic reasoning (\textit{Heuristic agent}) and one that behaves randomly (\textit{Random agent}). These agents are compared in a human-autonomy team (HAT) performing a cyber-protection task. Using this task, we systematically evaluate how autonomous teammates' cognitive abilities and competence impact the team's interaction and outcomes. The results revealed that teams with Cognitive agents are the most effective, followed by teams with Heuristic and Random agents. Evaluation of collaborative team process metrics suggests that the cognitive agent is more adaptive to individual play styles of human teammates, but it is also inconsistent and unpredictable. Competent agents (Cognitive and Heuristic agents) require less human effort but might cause over-reliance. The results of the post-experiment questionnaire showed that competent agents are rated more trustworthy and cooperative than Random agents. We also found that human participants' subjective ratings correlate with their team performance, and humans tend to take the credit or responsibility for the team. We suggest that autonomous agents for HATs should be competent and endowed with human-like cognition. In addition, agents should employ predictable behavior or explanations to maintain human trust and actively seek human support for more effective teamwork.`,
+  },
+  {
+    id: 4,
+    title: "Large Language Models for Collective Problem-Solving: Insights into Group Consensus Decision-Making",
+    date: "Nov 2023 - Feb 2024",
+    gitURL: "",
+    techstack: [],
+    gallery: [],
+    overview: `Large Language models (LLM) exhibit human-like proficiency in various tasks such as translation, question answering, essay writing, and programming. Emerging research explores the use of LLMs in collective problem-solving endeavors, such as tasks where groups try to uncover clues through discussions. Although prior work has investigated individual problem-solving tasks, leveraging LLM-powered agents for group consensus and decision-making remains largely unexplored. This research addresses this gap by (1) proposing an algorithm to enable free-form conversation in groups of LLM agents, (2) creating metrics to evaluate the human-likeness of the generated dialogue and problem-solving performance, and (3) evaluating LLM agent groups against human groups using an open source dataset. Our results reveal that LLM groups outperform human groups in problem-solving tasks. LLM groups also show a greater improvement in scores after participating in free discussions. In particular, analyses indicate that LLM agent groups exhibit more disagreements, complex statements, and a propensity for positive statements compared to human groups. The results shed light on the potential of LLMs to facilitate collective reasoning and provide insight into the dynamics of group interactions involving synthetic LLM agents.`,
+  },
+  {
+    id: 5,
+    title: "Emergent Cooperative Decision-Making in Triadic Prisoner's Dilemma: Effects of Incentives and Information",
+    date: "Sep 2024 - Dec 2024",
+    gitURL: "",
+    techstack: [],
+    gallery: [],
+    overview: `While pairwise cooperation has been extensively studied through the Prisoner's Dilemma framework, our understanding of how cooperation emerges in small groups remains limited. We extend the classical dyadic framework to triads, examining how individual strategies and relationships aggregate to influence group cooperation. Through two experiments (N= 519), we investigate:(1) how structural incentives shape cooperation by varying the K-index (0.4/0.8), a theoretical value that predicts greater cooperation for higher K values, and (2) how different degrees of information about mutual interdependence affect group behavior. We find that, under minimal information conditions, a higher K-index promotes sustained cooperation in the triadic setting, in alignment with the theoretical definition of the K-index. However, while experiential information (observing others' actions/outcomes) enhances cooperation, descriptive information (complete payoff matrices) paradoxically reduces cooperation. Analysis of triadic interactions reveals that selective cooperation by a third player in the group can stabilize cooperative dyadic relationships and destabilize defective dyadic relationships. These findings provide insights for designing cooperative systems, particularly in contexts where organizations must balance information-sharing benefits against strategic risks.`,
+  },
+  {
+    id: 6,
+    title: "Toward a Cognitive Theory of Human Behavior in Groups: Dynamic Weighting, Categorization, and Contrast",
+    date: "Jan 2025 - Mar 2025",
+    gitURL: "",
+    techstack: [],
+    gallery: [],
+    overview: `We analyze the dynamics of strategic interaction among a group of human agents through a novel cognitive model that integrates three key psychological mechanisms: dynamic weighting, category learning, and contrast effects. The dynamic weighting mechanism enables individuals to adjust how much they value others' choices and outcomes based on expectation-reality discrepancies. The category learning mechanism captures how people efficiently organize their social experiences into behavioral prototypes through hierarchical clustering. The contrast effect then sharpens the distinctions between these behavioral categories by amplifying perceived differences between groups. Using data from online group experiments, we demonstrate that the model successfully reproduces human behavior patterns without parameter fitting. Through detailed analysis of the dynamic weighting parameter ($\alpha$), we gain insight into the psychological processes underlying how individuals evaluate and respond to others in group settings. These findings advance our understanding of human cognition in complex social environments and suggest ways to improve collective outcomes in real-world applications.`,
   },
 ] as WorkContent[];
 
@@ -332,12 +355,32 @@ export const WorkAccordionContent = [
   },
   {
     id: 3,
-    type: WorkType.DECEPTION,
+    type: WorkType.HAT,
     icon: emptyfile,
-    title: "Digital Goods Management System",
+    title: "Cyber Protection Team",
     content: WorkData[WorkData.findIndex((x) => x.id === 3)],
   },
-
+  {
+    id: 4,
+    type: WorkType.GROUP,
+    icon: emptyfile,
+    title: "LLM Group Concensus",
+    content: WorkData[WorkData.findIndex((x) => x.id === 4)],
+  },
+  {
+    id: 5,
+    type: WorkType.GROUP,
+    icon: emptyfile,
+    title: "Group Prisoner's Dilemma",
+    content: WorkData[WorkData.findIndex((x) => x.id === 5)],
+  },
+  {
+    id: 5,
+    type: WorkType.GROUP,
+    icon: emptyfile,
+    title: "Human Model in Group IPD",
+    content: WorkData[WorkData.findIndex((x) => x.id === 6)],
+  },
 ] as WorkFile[];
 
 // For My Photography Collection
