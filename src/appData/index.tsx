@@ -248,6 +248,7 @@ export const AppDirectory: Map<number, Tab> = new Map([
 
 export const WorkAccordionTitles = [
   WorkType.DECEPTION,
+  WorkType.HM,
   WorkType.HAT,
   WorkType.GROUP,
 ];
@@ -336,6 +337,15 @@ found by PPO are significantly better than a heuristic policy.`,
     gallery: [],
     overview: `We analyze the dynamics of strategic interaction among a group of human agents through a novel cognitive model that integrates three key psychological mechanisms: dynamic weighting, category learning, and contrast effects. The dynamic weighting mechanism enables individuals to adjust how much they value others' choices and outcomes based on expectation-reality discrepancies. The category learning mechanism captures how people efficiently organize their social experiences into behavioral prototypes through hierarchical clustering. The contrast effect then sharpens the distinctions between these behavioral categories by amplifying perceived differences between groups. Using data from online group experiments, we demonstrate that the model successfully reproduces human behavior patterns without parameter fitting. Through detailed analysis of the dynamic weighting parameter ($\alpha$), we gain insight into the psychological processes underlying how individuals evaluate and respond to others in group settings. These findings advance our understanding of human cognition in complex social environments and suggest ways to improve collective outcomes in real-world applications.`,
   },
+  {
+    id: 7,
+    title: "Accounting for Transfer of Learning Using Human Behavior Models",
+    date: "Mar 2023 - June 2023",
+    gitURL: "",
+    techstack: [],
+    gallery: [],
+    overview: `An important characteristic of human learning and decision-making is the flexibility with which we rapidly adapt to novel tasks. To this day, models of human behavior have been unable to emulate the ease and success with which humans transfer knowledge in one context to another. Humans rely on a lifetime of experience and a variety of cognitive mechanisms that are difficult to represent computationally. To address this problem, we propose a novel human behavior model that accounts for human transfer of learning using three mechanisms: compositional reasoning, causal inference, and optimal forgetting. To evaluate this proposed model, we introduce an experiment task designed to elicit human transfer of learning under different conditions. Our proposed model demonstrates a more human-like transfer of learning compared to models that optimize transfer or human behavior models that do not directly account for transfer of learning. The results of the ablation testing of the proposed model and a systematic comparison to human data demonstrate the importance of each component of the cognitive model underlying the transfer of learning.`,
+  },
 ] as WorkContent[];
 
 export const WorkAccordionContent = [
@@ -350,14 +360,14 @@ export const WorkAccordionContent = [
     id: 2,
     type: WorkType.DECEPTION,
     icon: emptyfile,
-    title: "Cyber Deception Game",
+    title: "RL for Cyber Deception",
     content: WorkData[WorkData.findIndex((x) => x.id === 2)],
   },
   {
     id: 3,
     type: WorkType.HAT,
     icon: emptyfile,
-    title: "Cyber Protection Team",
+    title: "Human-AI Team Defense Game",
     content: WorkData[WorkData.findIndex((x) => x.id === 3)],
   },
   {
@@ -375,10 +385,17 @@ export const WorkAccordionContent = [
     content: WorkData[WorkData.findIndex((x) => x.id === 5)],
   },
   {
-    id: 5,
+    id: 6,
     type: WorkType.GROUP,
     icon: emptyfile,
     title: "Human Model in Group IPD",
+    content: WorkData[WorkData.findIndex((x) => x.id === 6)],
+  },
+  {
+    id: 7,
+    type: WorkType.HM,
+    icon: emptyfile,
+    title: "Human Model of Transfer Learning",
     content: WorkData[WorkData.findIndex((x) => x.id === 6)],
   },
 ] as WorkFile[];
