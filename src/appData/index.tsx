@@ -346,6 +346,27 @@ found by PPO are significantly better than a heuristic policy.`,
     gallery: [],
     overview: `An important characteristic of human learning and decision-making is the flexibility with which we rapidly adapt to novel tasks. To this day, models of human behavior have been unable to emulate the ease and success with which humans transfer knowledge in one context to another. Humans rely on a lifetime of experience and a variety of cognitive mechanisms that are difficult to represent computationally. To address this problem, we propose a novel human behavior model that accounts for human transfer of learning using three mechanisms: compositional reasoning, causal inference, and optimal forgetting. To evaluate this proposed model, we introduce an experiment task designed to elicit human transfer of learning under different conditions. Our proposed model demonstrates a more human-like transfer of learning compared to models that optimize transfer or human behavior models that do not directly account for transfer of learning. The results of the ablation testing of the proposed model and a systematic comparison to human data demonstrate the importance of each component of the cognitive model underlying the transfer of learning.`,
   },
+  {
+    id: 8,
+    title: "A Cyber-War Between Bots: Cognitive Attackers are More Challenging for Defenders than Strategic Attackers",
+    date: "May 2022 - Aug 2022",
+    gitURL: "",
+    techstack: [],
+    gallery: [],
+    overview: `Adversary emulation is commonly used to test cyber-defense performance against known threats to organizations. However,
+many adversary emulation methods often rely on automated planning and underplay the role of human cognition. Consequently, defenders are often underprepared for human attackers who can think creatively and adapt their strategies. In this
+paper, we propose the design of adversarial cognitive agents that are dynamic, adaptable, and able to learn from experience.
+These cognitive agents are built based on the theoretical principles of Instance-Based Learning Theory (IBLT) of experiential
+choice in dynamic tasks, making them more challenging than strategically optimal adversaries for human defenders. Our
+research ofers three main contributions. First, in a simulation experiment, we demonstrate how IBL attacker agents can learn
+from experience and become as eicient as optimal strategic algorithms against a strategic defender. In a second simulation
+experiment, the IBL attackers are pitted against an IBL defender, showing that the IBL attacker can be a more challenging
+adversary for the IBL defender, while the IBL defender can learn to counter carefully crafted optimal attack strategies. To test
+these observations, we conducted a third experiment, where humans played the role of defenders against both strategic and
+IBL attackers in an interactive task. The results conirm the predictions of the second simulation experiment: a cognitive
+attackers are more challenging for human defenders than strategic attackers. These insights contribute to informing future
+adversary emulation eforts and training of cyber defenders.`,
+  },
 ] as WorkContent[];
 
 export const WorkAccordionContent = [
@@ -396,7 +417,14 @@ export const WorkAccordionContent = [
     type: WorkType.HM,
     icon: emptyfile,
     title: "Human Model of Transfer Learning",
-    content: WorkData[WorkData.findIndex((x) => x.id === 6)],
+    content: WorkData[WorkData.findIndex((x) => x.id === 7)],
+  },
+  {
+    id: 8,
+    type: WorkType.HM,
+    icon: emptyfile,
+    title: "Attacker Model",
+    content: WorkData[WorkData.findIndex((x) => x.id === 8)],
   },
 ] as WorkFile[];
 
