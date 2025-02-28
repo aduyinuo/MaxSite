@@ -247,9 +247,9 @@ export const AppDirectory: Map<number, Tab> = new Map([
 ]);
 
 export const WorkAccordionTitles = [
-  WorkType.HACKATHON,
-  WorkType.PERSONAL,
-  WorkType.SCHOOL,
+  WorkType.DECEPTION,
+  WorkType.HAT,
+  WorkType.GROUP,
 ];
 
 export const GalleryAccordionTitles = ["Details"];
@@ -257,35 +257,48 @@ export const GalleryAccordionTitles = ["Details"];
 export const WorkData = [
   {
     id: 1,
-    title: "Windows XP Personalized Website",
-    date: "Jan 2023 - Feb 2023",
-    gitURL: "https://github.com/firwer/winxpsite",
-    techstack: [
-      TechIcon.TYPESCRIPT,
-      TechIcon.NEXTJS,
-      TechIcon.REDUX,
-      TechIcon.CSS,
-      TechIcon.HTML,
-      TechIcon.JAVASCRIPT,
-    ],
+    title: "Two-Sided Deception",
+    date: "May 2020 - Dec 2020",
+    gitURL: "",
+    techstack: [],
     gallery: [lul],
-    overview: `This project began as my software journey first began on Windows XP. Back then, I was
-    trying out many different things on my old XP computer such as creating my little CLI application
-    on batch files and also developing my very first GUI apps on Visual Studio 2010 (i.e Text encrypters,
-    My own Web browser, phishing program that can steal my friend's passwords :P, and I forgot what else...)
-    .Unfortunately, I lost all of those files so it was somewhat nostalgic to recreate the environment
-    that I used to have back then. Other than those, I also have fond memories of the MSN Messenger with 
-    that irritating nudge function. Anyway, I figured out why not present all my works and my digital 
-    identity somewhere familiar to me, so here we are, hope you'll enjoy this little project of mine!`,
+    overview: `One of the widely used cyber deception techniques
+is decoying, where defenders create fictitious machines (i.e., honeypots) to lure attackers. Honeypots are deployed to entice attackers, but their effectiveness depends on their configuration as that
+would influence whether attackers will judge them
+as “real” machines or not. In this work, we study
+two-sided deception, where we manipulate the observed configuration of both honeypots and real
+machines. The idea is to improve cyberdefense by
+either making honeypots “look like” real machines
+or by making real machines “look like honeypots.”
+We identify the modifiable features of both real machines and honeypots, and conceal these features
+to different degrees. In an experiment, we study
+three conditions: default features on both honeypot and real machines, concealed honeypots only,
+and concealed both honeypots and real machines.
+We use a network with 40 machines where 20 of
+them are honeypots. We manipulate the features
+of the machines, and using an experimental testbed
+(HackIT), we test the effectiveness of the decoying
+strategies against humans attackers. Results indi`,
   },
   {
     id: 2,
-    title: "Telegram Bot - SDA Crowd Level Report Generator",
-    date: "Oct - Nov 2022",
+    title: "Learning to Play an Adaptive Cyber Deception Game",
+    date: "Nov 2021 - Mar 2022",
     gitURL: "",
-    techstack: [TechIcon.TELEGRAM, TechIcon.PYTHON],
+    techstack: [],
     gallery: [],
-    overview: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel`,
+    overview: `Due to the increase in cyber threats and the dynamic nature of
+cyber attacks, it is important to use adaptive strategies to decide
+when and where to deploy the defense resources and engage the
+attackers through deceptive cyber artifacts to reduce attack effectiveness. However, most existing work that uses game-theoretic
+framework to analyze cyber deception does not consider defender
+and attacker’s ability to adapt to real-time observations. In this paper, we propose an Adaptive Cyber Deception Game, a two-player
+Markov game model that accounts for sequential moves between
+defender and attacker in a cyber deception scenario on an attack
+graph. We also study the use of a reinforcement learning algorithm
+– Proximal Policy Optimization (PPO) – with self-play in this game.
+Preliminary experimental results show that the defender policies
+found by PPO are significantly better than a heuristic policy.`,
   },
   {
     id: 3,
@@ -305,21 +318,21 @@ export const WorkData = [
 export const WorkAccordionContent = [
   {
     id: 1,
-    type: WorkType.PERSONAL,
+    type: WorkType.DECEPTION,
     icon: butterfly,
-    title: "Windows XP Personalized Website",
+    title: "Two-Sided Deception",
     content: WorkData[WorkData.findIndex((x) => x.id === 1)],
   },
   {
     id: 2,
-    type: WorkType.PERSONAL,
+    type: WorkType.DECEPTION,
     icon: emptyfile,
-    title: "SDA Report Generator",
+    title: "Cyber Deception Game",
     content: WorkData[WorkData.findIndex((x) => x.id === 2)],
   },
   {
     id: 3,
-    type: WorkType.PERSONAL,
+    type: WorkType.DECEPTION,
     icon: emptyfile,
     title: "Digital Goods Management System",
     content: WorkData[WorkData.findIndex((x) => x.id === 3)],
