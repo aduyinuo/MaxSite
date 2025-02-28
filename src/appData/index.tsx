@@ -25,6 +25,7 @@ import ee2026_4 from "../../assets/work/EE2026/ee2026_4.jpg";
 import ee2026_5 from "../../assets/work/EE2026/ee2026_5.jpg";
 import ee2026_6 from "../../assets/work/EE2026/ee2026_6.jpg";
 import ee2026_7 from "../../assets/work/EE2026/ee2026_7.jpg";
+import decep1 from "../../assets/2side.png";
 import dsta_1 from "../../assets/work/dsta/1.png";
 import dsta_2 from "../../assets/work/dsta/2.png";
 import dsta_3 from "../../assets/work/dsta/3.png";
@@ -262,7 +263,7 @@ export const WorkData = [
     date: "May 2020 - Dec 2020",
     gitURL: "",
     techstack: [],
-    gallery: [],
+    gallery: [decep1],
     overview: `One of the widely used cyber deception techniques
 is decoying, where defenders create fictitious machines (i.e., honeypots) to lure attackers. Honeypots are deployed to entice attackers, but their effectiveness depends on their configuration as that
 would influence whether attackers will judge them
