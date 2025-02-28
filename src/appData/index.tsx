@@ -26,6 +26,9 @@ import ee2026_5 from "../../assets/work/EE2026/ee2026_5.jpg";
 import ee2026_6 from "../../assets/work/EE2026/ee2026_6.jpg";
 import ee2026_7 from "../../assets/work/EE2026/ee2026_7.jpg";
 import decep1 from "../../assets/2side.png";
+import decep2 from "../../assets/RLDecep.png";
+import llm1 from "../../assets/LLMConvo.png";
+import llm2 from "../../assets/LLMAgent.png";
 import dsta_1 from "../../assets/work/dsta/1.png";
 import dsta_2 from "../../assets/work/dsta/2.png";
 import dsta_3 from "../../assets/work/dsta/3.png";
@@ -288,7 +291,7 @@ strategies against humans attackers. Results indi`,
     date: "Nov 2021 - Mar 2022",
     gitURL: "",
     techstack: [],
-    gallery: [],
+    gallery: [decep2],
     overview: `Due to the increase in cyber threats and the dynamic nature of
 cyber attacks, it is important to use adaptive strategies to decide
 when and where to deploy the defense resources and engage the
@@ -316,7 +319,7 @@ found by PPO are significantly better than a heuristic policy.`,
     title: "Large Language Models for Collective Problem-Solving: Insights into Group Consensus Decision-Making",
     date: "Nov 2023 - Feb 2024",
     gitURL: "",
-    techstack: [],
+    techstack: [llm1, llm2],
     gallery: [],
     overview: `Large Language models (LLM) exhibit human-like proficiency in various tasks such as translation, question answering, essay writing, and programming. Emerging research explores the use of LLMs in collective problem-solving endeavors, such as tasks where groups try to uncover clues through discussions. Although prior work has investigated individual problem-solving tasks, leveraging LLM-powered agents for group consensus and decision-making remains largely unexplored. This research addresses this gap by (1) proposing an algorithm to enable free-form conversation in groups of LLM agents, (2) creating metrics to evaluate the human-likeness of the generated dialogue and problem-solving performance, and (3) evaluating LLM agent groups against human groups using an open source dataset. Our results reveal that LLM groups outperform human groups in problem-solving tasks. LLM groups also show a greater improvement in scores after participating in free discussions. In particular, analyses indicate that LLM agent groups exhibit more disagreements, complex statements, and a propensity for positive statements compared to human groups. The results shed light on the potential of LLMs to facilitate collective reasoning and provide insight into the dynamics of group interactions involving synthetic LLM agents.`,
   },
