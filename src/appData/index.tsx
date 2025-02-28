@@ -29,7 +29,7 @@ import decep1 from "../../assets/2side.png";
 import decep2 from "../../assets/RLDecep.png";
 import llm1 from "../../assets/LLMConvo.png";
 import llm2 from "../../assets/LLMAgent.png";
-import tdg from "../../assets/Picture1_bis.png";
+import tdg from "../../assets/Picture1-bis.png";
 import transfer1 from "../../assets/transfer.png";
 import transfer2 from "../../assets/transferAlg.png";
 import dsta_1 from "../../assets/work/dsta/1.png";
